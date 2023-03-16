@@ -1151,6 +1151,7 @@ def save_all(
 
             loras["unet"] = (unet, target_replace_module_unet)
             loras["text_encoder"] = (text_encoder, target_replace_module_text)
+            save_safeloras(loras, save_path + "/lora_weight.safetensors")
 
         if save_ti:
             for tok, tok_id in zip(placeholder_tokens, placeholder_token_ids):
