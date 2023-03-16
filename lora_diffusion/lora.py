@@ -542,7 +542,7 @@ def save_safeloras(
     modelmap: Dict[str, Tuple[nn.Module, Set[str]]] = {},
     outpath="./lora.safetensors",
 ):
-    save_safeloras_with_embeds(modelmap=modelmap, outpath=outpath)  # tbq comment
+    # tbq comment
     return save_safeloras_for_webui(modelmap=modelmap, outpath=outpath.replace('.safetensors', '_webui.safetensors'))  # tbq add for webui
 
 
